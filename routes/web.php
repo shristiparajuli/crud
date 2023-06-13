@@ -23,7 +23,7 @@ Route::get('/', function () {
     //$posts = Post::where('user_id', auth()->id())->get(); 
     return view('products.index',['posts' => $posts]);
     });
-
+    
 Route::post('/register', [UserController::class, 'register']);
 Route::post('/logout', [UserController::class, 'logout']);
 Route::post('/login', [UserController::class, 'login']);
